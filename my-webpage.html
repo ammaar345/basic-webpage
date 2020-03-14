@@ -16,15 +16,18 @@
          </div>
          </div>
          <h2>Which City?</h2>
-           <div class="bog">
-          <h3>Bogota</h3>
+         
+          
+         <h3>Bogota</h3>
+         <div class="allbog">
           <div class="imgbog">
 
 
 
             <img src="columbia1.jpg" alt="not found" >
-
-            <ul>
+          </div>
+          <div class="bog text">
+          <ul>
 
                 <li>I'd like to visit Bogota since its people is recorded as the happiest of all the cities in the
                     world.</li>
@@ -33,6 +36,8 @@
                 <li>This combination creates some of the nicest and best looking people on the planet.</li>
             </ul>
         </div>
+        </div>
+    
     </div>
     </div>
     </div>
@@ -136,76 +141,64 @@
                     
                 </div>
                 </body>
+                
+                
                 <style>
-                    .pl {
-                        border: 1px red;
-                        padding: 10px;
-                        display: flex;
-                    }
+      
+      /*causes unresponsive head   .allbog{display: flex;}*/
+       
+      .places {
+                flex-grow: 1;
+            }
+
+         
 
 
-                    @media(min-width: 800px) {
+            .me {
+                float: right;
+                vertical-align: right
+            }
+       
 
+        .clearfix {
+            overflow: auto;
+            zoom: 1;
+        }
 
-                        .allcontent {
-                            display: flex;
-                            flex: 1;
-                            
-                          /*  vertical-align: middle;*/
-                        }
+        .header {
 
-                        .allcontent {
-                            flex: 1;
-
-                        }
-                        .historic {
-                            display: flex;
-                        }
-                       
-                        .places {
-                            flex-grow: 1;
-                        }
-
-                        /*.place img {
-                            width: 150px;
-                            height: 150px;
-                        }*/
-
-
-                        .me {
-                            float: right;
-                            vertical-align: right
-                        }
-                        /*.pic{height: 200px;
-                        width: 200px;}*/
-                    }
-
-
-                    .clearfix {
-                        overflow: auto;
-                        zoom: 1;
-                    }
-
-                    .header {
-
-                        overflow: auto;
-                        zoom: 1;
-                    }
+            overflow: auto;
+            zoom: 1;
+        }
 
 
 
 
-                    table,
-                    th,
-                    td {
-                        border: 2px solid black;
-                        width: 40%;
-                    }
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            width: 40%;
+        }
 
-                    /*th,
-     td {
-         padding: 15px;
-      }*/
+  @media(min-width: 800px) {
+
+.bog{flex: 1;}
+            .allcontent {
+                display: flex;
+                flex: 1;
+             
+            }
+
+            .allcontent {
+                flex: 1;
+
+            }
+            .historic {
+                display: flex;
+            }
+        
+            }
                 </style>
 
 </html>
